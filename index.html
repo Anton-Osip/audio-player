@@ -9,6 +9,7 @@
     <title>Audio Player</title>
     <link rel = "stylesheet" href = "./reset.css">
     <link rel = "stylesheet" href = "./styles.css">
+    <script defer src = "./script.js"></script>
 </head>
 <body>
 <img src = "./assets/img/lemonade.png" alt = "" class = "backgroundImage">
@@ -19,7 +20,7 @@
     </div>
     <div class = "controls">
         <div class = "controls__info">
-            <button class = "play_pause pause"></button>
+            <button class = "play_pause play"></button>
             <div class = "info">
                 <p class = "song-artist">BeyonceBeyonceBeyonceBeyonceBeyonce</p>
                 <p class = "song-title">Don't Hurt YourselfDon't Hurt YourselfDon't Hurt YourselfDon't Hurt
@@ -31,7 +32,9 @@
             </div>
         </div>
         <div class = "progressbar">
-            <input type = "range" class = "progressbar__input" min = "0" max = "233.717551" value = "0">
+            <label>
+                <input type = "range" class = "progressbar__input" min = "0" max = "100" value = "0">
+            </label>
             <div class = "time">
                 <span class = "currentTime">0:00</span>
                 <span class = "durationTime">0:00</span>
@@ -41,11 +44,11 @@
 </div>
 <footer class = "footer">
     <div class = "wrapper">
-        <a href = "https://anton-osip.github.io/Portfolio/" class="logo">
+        <a href = "https://anton-osip.github.io/Portfolio/" class = "logo">
             <img src = "./assets/svg/logo.svg" alt = "Portfolio">
         </a>
         <span class = "date">2024</span>
-        <a href = "https://rs.school/courses/javascript-preschool-ru" class="school">
+        <a href = "https://rs.school/courses/javascript-preschool-ru" class = "school">
             <img src = "./assets/img/rss-logo.svg" alt = "rs.school">
         </a>
     </div>

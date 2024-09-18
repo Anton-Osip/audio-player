@@ -67,7 +67,7 @@ button:active {
     transition: transform 0.3s ease-in-out;
 }
 
-.play .thumbnail {
+.play.thumbnail {
     object-fit: cover;
     transform: scale(1.15);
 }
@@ -206,4 +206,10 @@ button:active {
 
 .school > img {
     height: 51px;
+}
+
+@media screen and (max-width: 426px) {
+    .container {
+        max-width: 276px
+    }
 }
